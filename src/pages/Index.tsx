@@ -32,8 +32,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="border-b border-border px-6 py-4">
-        <div className="flex items-center justify-between">
+      <header className="border-b border-border px-4 sm:px-6 py-4">
+        <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
           <div>
             <h1 className="text-lg font-bold text-foreground flex items-center gap-2">
               Polarlyst Arbitrage Positions
@@ -59,7 +59,7 @@ const Index = () => {
       </header>
 
       {/* Main Content */}
-      <main className="px-6 py-6 max-w-[1600px] mx-auto">
+      <main className="px-4 sm:px-6 py-6 max-w-[1600px] mx-auto">
         {error && (
           <div className="mb-4 rounded-lg border border-loss/30 bg-loss/10 px-4 py-3 text-sm text-loss">{error}</div>
         )}

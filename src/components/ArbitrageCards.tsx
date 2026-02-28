@@ -181,7 +181,7 @@ const ArbitrageCards = ({ matchResult }: ArbitrageCardsProps) => {
                   </div>
 
                   {/* Entry → Current layout */}
-                  <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-stretch">
+                  <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 items-center md:items-stretch">
                     {/* LEFT: Entry / Buy prices */}
                     <div className="rounded-md bg-secondary/50 p-3">
                       <div className="text-[10px] font-semibold text-muted-foreground mb-3 uppercase tracking-wider">
@@ -262,8 +262,8 @@ const ArbitrageCards = ({ matchResult }: ArbitrageCardsProps) => {
                     </div>
 
                     {/* Arrow */}
-                    <div className="flex flex-col items-center justify-center gap-1">
-                      <ArrowRight className="w-4 h-4 text-primary" />
+                    <div className="flex flex-col items-center justify-center gap-1 my-2 md:my-0">
+                      <ArrowRight className="w-4 h-4 text-primary rotate-90 md:rotate-0" />
                     </div>
 
                     {/* RIGHT: Current prices */}
